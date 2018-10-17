@@ -1,0 +1,26 @@
+<!-- Material form login -->
+<div id="blurredContainer">
+<form>
+    <p class="h4 text-center mb-4">Prijava na sistem</p>
+
+    <!-- Material input email -->
+    <div class="md-form">
+        <i class="fa fa-envelope prefix grey-text"></i>
+        <input [(ngModel)]="username" id="materialFormLoginUsernameEx" type="text" name="username" class="form-control">
+        <label *ngIf="username==null || username == ''" for="materialFormLoginEmailEx">Unesite korisnicko ime </label>
+    </div>
+
+    <!-- Material input password -->
+    <div class="md-form">
+        <i class="fa fa-lock prefix grey-text"></i>
+        <input [(ngModel)]="password"  id="materialFormLoginPasswordEx" name="password" type="password" class="form-control">
+        <label *ngIf="password==null || password == ''" for="materialFormLoginPasswordEx" >Unesite lozinku</label>
+    </div>
+
+    <div class="text-center mt-4">
+        <button class="btn btn-default" type="button" (click)="login()">Prijava</button>
+    </div>
+</form>
+</div>
+<app-error-dialog></app-error-dialog>
+<!-- Material form login -->

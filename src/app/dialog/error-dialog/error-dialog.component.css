@@ -1,0 +1,12 @@
+#basicModal { 
+    top: 30%;
+}
+
+.modal-header{
+    text-align: center; 
+    background-color: rgb(255, 53, 71);
+}
+.modal-body{
+    text-align: center;
+    margin: 1em 0;
+}

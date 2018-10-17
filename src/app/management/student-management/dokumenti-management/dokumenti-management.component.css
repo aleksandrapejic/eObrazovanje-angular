@@ -1,0 +1,45 @@
+tr button{
+    width: 100%;
+    font-size: 0.8em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 0.2em 0;
+}
+
+footer{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#footerDiv{
+    width:100%; 
+    text-align: "center";
+}
+
+select{
+    padding:0.5em 1em;
+}
+
+.pagination .disabled a.num{
+    color: white;
+}
+
+.input-group input{
+    margin: 1em 0.5em;
+    border-radius: 0.75em;
+}
+
+.input-group img{
+    max-width: 2em; 
+    max-height: 2em;
+    cursor: pointer;
+}
+
+.input-group img, .input-group a{
+    align-self: center;
+}
+
+h2{
+    align-self: center;
+    width: 50%;
+}

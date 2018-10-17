@@ -1,0 +1,80 @@
+
+<!--Author box-->
+<div class="author-box">
+  <!--Name-->
+
+      <!--Author Data-->
+      <div class="card card-body" style="background: white;">
+      <div class=" col-12 col-lg-12">
+            <ul class="list-group"  >
+                    <li  class="list-group-item" style=" padding: 0.2em;">Naziv predmeta:<p>{{user.username}}</p></li>
+                    <li  class="list-group-item" style=" padding: 0.2em;">Profesor: <p>{{user.firstName}}</p></li>
+                    <li  class="list-group-item" style="padding: 0.2em;">Bodovi:<p>{{user.lastName}}</p></li>
+                    <li  class="list-group-item" style="padding: 0.2em;">Asistent:<p>{{user.address}}</p></li>
+                    <li  class="list-group-item" style="padding: 0.2em;">Godina:<p>{{user.role}}</p> </li>
+                    <li  class="list-group-item" style="font-weight: bold"><a class="btn btn-primary" type="button" routerLink="settings" >Change password</a></li>
+                  </ul>
+
+        </div>
+        </div>
+
+
+
+          <br><hr>
+          <h3 class="h3-responsive text-left">Predispitne obaveze</h3>
+ 
+          <div class="card card-body" style="background: white;">
+                <div class=" col-12 col-lg-12">
+          <table class="table" style="table-layout: fixed">
+                <!--Table head-->
+                <thead class="blue-grey lighten-4">
+          
+            <tr>
+                <th>Predmet</th>  
+                <th>Oznaka</th>          
+                <th>Bodovi</th>            
+                        
+            </tr>
+            <tbody  *ngFor="let ispit of ispiti" value = [ispiti] style="background: white;">
+                <tr>    
+                    
+                </tr>
+            </tbody>
+          </table>
+      </div>
+      </div>
+
+     <br><hr>
+      <h3 class="h3-responsive text-left">Smerovi</h3>
+
+      <div class="card card-body" style="background: white;">
+            <div class=" col-12 col-lg-12">
+      <table class="table" style="table-layout: fixed">
+            <!--Table head-->
+            <thead class="blue-grey lighten-4">
+      
+        <tr>
+            <th>Predmet</th>  
+            <th></th>          
+            <th>Broj bodova</th>            
+            <th>Profesor</th> 
+            <th>Datum</th> 
+            <th>Bodovi</th>
+            <th>Ocena</th>              
+        </tr>
+        <tbody  *ngFor="let ispit of ispiti" value = [ispiti] style="background: white;">
+            <tr>    
+                
+            </tr>
+        </tbody>
+      </table>
+  </div>
+  </div>
+
+
+
+
+      </div>
+
+<!--/.Author box-->
+
